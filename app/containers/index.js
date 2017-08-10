@@ -1,11 +1,26 @@
 import React, { Component } from 'react'
 import RouterMap from '../routes/index.js'
 
-export default class Home extends Component {
+export default class App extends Component {
+    constructor(){
+        super()
+        this.state = {
+            done: false
+        }
+    }
+
+    componentDidMount(){
+        // setTimeout( ()=> {
+            this.setState({
+                done: true
+            })
+        // },2000)
+    }
+
     render(){
         return (
             <div>
-                <RouterMap/>
+                {this.state.done?<RouterMap/>: <div>loading</div>}
             </div>
         )
     }
