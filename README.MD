@@ -28,6 +28,13 @@ yarn add es6-promise whatwg-fetch
 ```
 yarn add express
 ```
+## swiper 插件
+```
+yarn add swipe-js-iso react-swipe
+
+github 地址:https://github.com/voronianski/react-swipe
+```
+
 ## scripts
 ```
 "start": "webpack-dev-server --port 4000 --open --progress --color",
