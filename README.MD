@@ -48,8 +48,13 @@ github 地址:https://github.com/voronianski/react-swipe
         -subPage 智能组件
         -index.js
 
-
 - index.js 用来控制显示哪一个页面
+
+- store onlyOne
+- actions 用户发布动作
+- reducers 定义动作规则
+- actionTypes action名字
+
 
 
 

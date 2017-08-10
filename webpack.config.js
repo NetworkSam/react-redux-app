@@ -30,7 +30,7 @@ module.exports = {
     devServer: {
         //配置代理跨域
         proxy:{
-            '/api': 'http://localhost:3000'
+            '/api': 'http://localhost:9000'
         }
     }
 

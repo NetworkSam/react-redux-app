@@ -5,9 +5,7 @@ import {
     Route, //单条路由
 
 } from 'react-router-dom'
-
 import Home from '../containers/Home/index.js'
-
 export default class RouterMap extends Component {
     render(){
         return (
