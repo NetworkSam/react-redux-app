@@ -12,7 +12,7 @@ module.exports = {
             {
                 test:/\.js$/,
                 use: 'babel-loader',
-                exclude: 'node_modules'
+                exclude: '/node_modules/'
             },
             {
                 test:/\.less/,
@@ -22,8 +22,16 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            filename:''
+            template:'./app/index.html'
         })
-    ]
+    ],
+
+    devtool: 'source-map', //错误时  可以提示源码错误 不会光bundle.js显示
+    devServer: {
+        //配置代理跨域
+        proxy:{
+            '/api': 'http://localhost:3000'
+        }
+    }
 
 }

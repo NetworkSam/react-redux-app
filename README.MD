@@ -6,13 +6,11 @@
 ```
 yarn init
 ```
-
 ## webpack
 
 ```
 yarn add webpack webpack-dev-server -dev
 ```
-
 ## babel
 ```
 yarn add babel-core babel-loader  babel-preset-es2015 babel-preset-stage-0 babel-preset-react
@@ -20,27 +18,34 @@ css-loader style-loader less less-loader html-webpack-plugin -dev
 ```
 ## react
 ```
-yarn add react redux react-redux react-router-dom
+yarn add react react-dom redux react-redux react-router-dom
 ```
-
 ## fetch
 ```
 yarn add es6-promise whatwg-fetch
 ```
 ## express
-
 ```
 yarn add express
 ```
-
 ## scripts
 ```
-"start", "webpack-dev-server --port 4000 --open --progress --color"
+"start": "webpack-dev-server --port 4000 --open --progress --color",
+"build": "webpack -p"
 ```
+## 目录结构
+- components 组件 木偶组件
 
-## build
-```
-"build":"webpack -p"
-```
+- containers 页面组件
+    -home
+        -subPage 智能组件
+        -index.js
+
+
+- index.js 用来控制显示哪一个页面
+
+
+
+
 
 
