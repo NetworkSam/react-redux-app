@@ -15,7 +15,7 @@ yarn add webpack webpack-dev-server -dev
 
 ## babel
 ```
-yarn add babel-core babel-loader  babel-preset-2015 babel-preset-stage-0 babel-preset-react
+yarn add babel-core babel-loader  babel-preset-es2015 babel-preset-stage-0 babel-preset-react
 css-loader style-loader less less-loader html-webpack-plugin -dev
 ```
 ## react
@@ -40,7 +40,7 @@ yarn add express
 
 ## build
 ```
-"build","webpack -p"
+"build":"webpack -p"
 ```
 
 
