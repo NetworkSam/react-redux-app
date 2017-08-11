@@ -1,0 +1,21 @@
+import React, { Component } from 'react'
+
+import ListItem from './ListItem/index.js'
+
+export default class ListComponent extends Component {
+    constructor(){
+        super();
+    }
+    render(){
+
+        return (
+            <div>
+                {
+                    this.props.data.map((item, index)=>(
+                        <ListItem key={index} data={item} />
+                    ))
+                }
+            </div>
+        )
+    }
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import HomeHeader from '../../components/HomeHeader/index.js'
 import Slider from '../../components/Slider/index.js'
 import Ad from '../../containers/Home/subpage/ad.js'
+import List from '../../containers/Home/subpage/list.js'
 import { connect } from 'react-redux'
 
 class Home extends Component {
@@ -11,7 +12,7 @@ class Home extends Component {
                 <HomeHeader cityName={this.props.userInfo.cityName}/>
                 <Slider/>
                 <Ad/>
-                Home
+                <List/>
             </div>
         )
     }

@@ -17,9 +17,10 @@ export default class Ad extends Component {
     //         })
     //     })
     // }
+
     render(){
         let data = this.state.data;
-        console.log(data);
+        // console.log(data);
         return (
             <div className="ad">
                 <h3>超值特惠</h3>
